@@ -1,10 +1,9 @@
-sumando1 = 10
-sumando2 = 5
-suma = sumando1 + sumando2
-
 def multiplicacion(multiplicando, multiplicador):
     producto = multiplicando * multiplicador
     return producto
 
-resultado = multiplicacion(sumando1, suma)
-print(resultado)
+if __name__== "__main__":
+    multiplicando = float(input("Multiplicando: "))
+    multiplicador = float(input("Multiplicador: "))
+    resultado = multiplicacion(multiplicando, multiplicador)
+    print(f"{multiplicando} * {multiplicador} = {resultado}") 
